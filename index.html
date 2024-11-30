@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConvertX Unit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Unit Converter</h1>
+    <div class="converter">
+      <label for="unitType">Unit Type</label>
+      <select id="unitType">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="temperature">Temperature</option>
+      </select>
+
+      <div class="input-group">
+        <input type="number" id="inputValue" placeholder="Enter value">
+        <select id="inputUnit"></select>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="outputValue" readonly placeholder="Converted value">
+        <select id="outputUnit"></select>
+      </div>
+
+      <button id="convertBtn">Convert</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
